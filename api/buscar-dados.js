@@ -4,7 +4,7 @@ export default async function handler(request, response) {
   const TMDB_TOKEN = process.env.TMDB_API_KEY; 
 
   // 2. Define qual rota do TMDB você quer chamar (ex: filmes populares)
-  const url = 'https://api.themoviedb.org/3/movie/popular?language=pt-BR&page=1';
+  const url = 'https://api.themoviedb.org/3/movie/11';
 
   // 3. Configura a autenticação que o TMDB exige
   const options = {
