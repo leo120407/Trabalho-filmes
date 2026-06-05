@@ -1,4 +1,4 @@
 async function teste() {
      dados = await fetch('/api/buscar-dados.js')
-     console.log(dados);
+     console.log(dados.response);
 }
