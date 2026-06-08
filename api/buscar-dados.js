@@ -1,10 +1,12 @@
 // api/filmes.js
 export default async function handler(request, response) {
   // 1. Pega o Token seguro das variáveis de ambiente da Vercel
-  const TMDB_TOKEN = process.env.TMDB_API_KEY; 
+  const TMDB_TOKEN = process.env.TMDB_API_KEY;
+
+  const {query, language = "pt-br"} = request.query;
 
   // 2. Define qual rota do TMDB você quer chamar (ex: filmes populares)
-  const url = 'https://api.themoviedb.org/3/search/movie?query=Vingadores';
+  const url = `https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(query)}&language=${language}`;
 
   // 3. Configura a autenticação que o TMDB exige
   const options = {
