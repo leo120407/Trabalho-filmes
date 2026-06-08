@@ -1,7 +1,7 @@
 const form = document.getElementById("search-form");
 
 form.addEventListener('submit', async (e) => {
-    e.preventDefault;
+    e.preventDefault();
     let language = document.getElementById('language').value;
     let movie = document.getElementById('movie').value;
 
