@@ -1,4 +1,5 @@
 const form = document.getElementById("search-form");
+const movies_container = document.getElementById('movies-container');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -7,7 +8,11 @@ form.addEventListener('submit', async (e) => {
 
     let response = await fetch(`/api/buscar-dados?query=${encodeURIComponent(movie)}&language=${language}`)
     let dados = await response.json();
+    console.log(dados);
     dados.results.forEach(movie => {
-        console.log(movie.title)
+        let movie_card = document.createElement('div');
+        movie_card.innerHTML = `
+        
+        `
     });
 })
