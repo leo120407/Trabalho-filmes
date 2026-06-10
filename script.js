@@ -12,9 +12,10 @@ form.addEventListener('submit', async (e) => {
     dados.results.forEach(movie => {
         let movie_card = document.createElement('div');
         movie_card.innerHTML = `
-        <img src="https://image.tmdb.org/t/p/w342${movie.poster_path}" alt="Poster">
+        <img src="https://image.tmdb.org/t/p/w92${movie.poster_path}" alt="Poster">
         <div>${movie.title}</div>
-        <div>Média de avaliações: ${movie.vote_average*10}</div><div>Sinopse: ${movie.overview}</div>
+        <div>Média de avaliações: ${movie.vote_average}</div><div>Sinopse: ${movie.overview}</div>
         `
+        movies_container.appendChild(movie_card);
     });
 })
