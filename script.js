@@ -7,5 +7,7 @@ form.addEventListener('submit', async (e) => {
 
     let response = await fetch(`/api/buscar-dados?query=${encodeURIComponent(movie)}&language=${language}`)
     let dados = await response.json();
-    console.log(dados.results);
+    dados.results.forEach(movie => {
+        console.log(movie.title)
+    });
 })
