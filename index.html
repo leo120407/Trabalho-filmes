@@ -12,15 +12,19 @@
             Cine Busca
         </div>
     </header>
-    <form id="search-form" class="">
-        <label for="movie" class="form-label">Filme desejado</label>
-        <input type="text" name="movie" id="movie" class="form-control">
-        <label for="language" class="form-label">Linguagem do filme: </label>
-        <select name="language" id="language">
-            <option value="pt-br">Português</option>
-            <option value="en-US">Inglês</option>
-        </select>
-        <button type="submit" class="btn-primary">Procurar</button>
+    <form id="search-form" class="container my-4">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-6">
+                <label for="movie" class="form-label">Filme desejado</label>
+                <input type="text" name="movie" id="movie" class="form-control">
+                <label for="language" class="form-label">Linguagem do filme: </label>
+                <select name="language" id="language">
+                    <option value="pt-br">Português</option>
+                    <option value="en-US">Inglês</option>
+                </select>
+                <button type="submit" class="btn-primary">Procurar</button>
+            </div>
+        </div>
     </form>
     <div id="movies-container">
         
