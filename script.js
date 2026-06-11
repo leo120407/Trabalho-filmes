@@ -12,11 +12,21 @@ form.addEventListener('submit', async (e) => {
     movies_container.innerHTML = "";
     dados.results.forEach(movie => {
         let movie_card = document.createElement('div');
+        movie_card.className = 'card mb-3';
         movie_card.innerHTML = `
-        <img src="https://image.tmdb.org/t/p/w92${movie.poster_path}" alt="Poster">
-        <div>${movie.title}</div>
-        <div>Média de avaliações: ${movie.vote_average}</div><div>Sinopse: ${movie.overview}</div>
-        `
+            <div class="row g-0 align-items-center">
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <img src="https://image.tmdb.org/t/p/w92${movie.poster_path}" class="img-fluid rounded-start" alt="Poster of ${movie.title}">
+                </div>
+                <div class="col-9">
+                    <div class="card-body p-2 ps-2">
+                        <h5 class="card-title mb-1">${movie.title}</h5>
+                        <p class="card-text mb-1">Média de avaliações: ${movie.vote_average}</p>
+                        <p class="card-text mb-0">Sinopse: ${movie.overview}</p>
+                    </div>
+                </div>
+            </div>
+        `;
         movies_container.appendChild(movie_card);
     });
 })
