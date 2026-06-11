@@ -12,37 +12,37 @@
             Cine Busca
         </div>
     </header>
-    <form id="search-form" class="container my-4">
-        <div class="row">
-            <div class="col-12 col-md-10 col-lg-6">
-                <div class="mb-3">
-                    <label for="movie" class="form-label">Filme desejado</label>
-                    <input type="text" name="movie" id="movie" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="language" class="form-label">Linguagem do filme: </label>
-                    <select name="language" id="language" class="form-select">
-                        <option value="pt-br">Português</option>
-                        <option value="en-US">Inglês</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Procurar</button>
+    <div class="container my-4">
+        <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-4">
+                <form id="search-form">
+                    <div class="mb-3">
+                        <label for="movie" class="form-label">Filme desejado</label>
+                        <input type="text" name="movie" id="movie" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="language" class="form-label">Linguagem do filme:</label>
+                        <select name="language" id="language" class="form-select">
+                            <option value="pt-br">Português</option>
+                            <option value="en-US">Inglês</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Procurar</button>
+                </form>
             </div>
-        </div>
-    </form>
-    <div id="movies-container" class="container my-4">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-6">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="https://image.tmdb.org/t/p/w92/fqxufTXVR1da4ImsTDdaKGVS5iz.jpg" class="img-fluid rounded-start" alt="Poster">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Vingadores: no sleep till brooklyn</h5>
-                                <p class="card-text">Média de avaliações: 10</p>
-                                <p class="card-text">Sinopse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt dolore fugit voluptatum, deleniti debitis nihil perferendis a ipsa in, dolor animi incidunt quod error enim, sed possimus deserunt suscipit!</p>
+            <div class="col-12 col-lg-8">
+                <div id="movies-container">
+                    <div class="card mb-3">
+                        <div class="row g-0 h-100">
+                            <div class="col-4 d-flex align-items-center justify-content-center bg-light">
+                                <img src="https://image.tmdb.org/t/p/w92/fqxufTXVR1da4ImsTDdaKGVS5iz.jpg" class="img-fluid rounded-start" alt="Poster">
+                            </div>
+                            <div class="col-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vingadores: no sleep till brooklyn</h5>
+                                    <p class="card-text">Média de avaliações: 10</p>
+                                    <p class="card-text">Sinopse: Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nesciunt dolore fugit voluptatum, deleniti debitis nihil perferendis a ipsa in, dolor animi incidunt quod error enim, sed possimus deserunt suscipit!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
